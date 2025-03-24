@@ -2,98 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bella's Collection</title>
+  <title>website login/register page</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1 class="logo img">Bella's Collection</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#collection">Collection</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <h2 class="logo">ቀለም Quiz</h2>
+    <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">Contact </a>
+        <button class="btnlogin-popup">Login</button>
+    </nav>
   </header>
-
-  <section id="home" class="hero">
-    <div class="hero-content container">
-      <h2 data-fade="fade-in">Experience Timeless Luxury</h2>
-      <p data-fade="fade-in">Explore our luxury watch collection and find your perfect match.</p>
-      <a href="#collection" class="btn" data-fade="fade-in">Explore Collection</a>
+  <div class="wrapper">
+    <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+    <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" required>
+            <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox">Remember me</label>
+            <a href="#">Forgot Password?</a>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <div class="login-register">
+            <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+          </div>
+        </form>
     </div>
-  </section>
-
-  <section id="about" class="about">
-    <div class="container">
-      <h2 data-fade="fade-in">About Us</h2>
-      <p data-fade="fade-in">
-Welcome to Bella's Collection, your destination for the most beautiful and luxurious watches. Discover our stunning selection of timepieces, each crafted with elegance and precision. Elevate your style with Bella's Collection, where every watch tells a story of luxury.
-      </p>
-    </div>
-  </section>
-
-  <section id="collection" class="collection">
-    <div class="container">
-      <h2 data-fade="fade-in">Our Exclusive Collection</h2>
-      <div class="grid">
-        <div class="card" data-fade="fade-in">
-          <img src="1st watch.jpeg" alt="Watch 1">
-          <h3>Elegant Diamond</h3>
-          <p>200,000ETB</p>
+    <div class="form-box register">
+      <h2>Registration</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="person"></ion-icon></span>
+          <input type="text" required>
+          <label>Username</label>
         </div>
-        <div class="card" data-fade="fade-in">
-          <img src="2nd watch.jpeg" alt="Watch 2">
-          <h3>Golden Classic</h3>
-          <p>80,000ETB</p>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" required>
+          <label>Email</label>
         </div>
-        <div class="card" data-fade="fade-in">
-          <img src="3rd watch.png" alt="Watch 3">
-          <h3>Luxury Black</h3>
-          <p>65,000ETB</p>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+          <input type="password" required>
+          <label>Password</label>
         </div>
-        <div class="card" data-fade="fade-in">
-          <img src="4th watch.jpeg" alt="Watch 4">
-          <h3>Platinum Elite</h3>
-          <p>$55,000ETB</p>
+        <div class="remember-forgot">
+          <label><input type="checkbox">I agree to the terms & conditions.</label>
+        
         </div>
-        <div class="card" data-fade="fade-in">
-          <img src="5th watch.jpeg" alt="Watch 5">
-          <h3>Rose Gold Elegance</h3>
-          <p>45,000ETB</p>
+        <button type="submit" class="btn">Register</button>
+        <div class="login-register">
+          <p>Already have an account?<a href="#" class="login-link">Login</a></p>
         </div>
-        <div class="card" data-fade="fade-in">
-          <img src="6th watch.jpeg" alt="Watch 6">
-          <h3>Midnight Edition</h3>
-          <p>60,000ETB</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2 data-fade="fade-in">Contact Us</h2>
-      <form data-fade="fade-in">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" rows="4" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
       </form>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 Bella's Collection. Designed for timeless elegance.</p>
-  </footer>
-
-  <script src="script.js"></script>
+  </div>
+  </div>
 </body>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
